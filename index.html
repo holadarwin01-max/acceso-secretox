@@ -30,7 +30,7 @@
 
   <script>
     // ✅ CAMBIA ESTO:
-    const CODIGO_Válidos = ["2201", "2095", "1883" // <-- tu código
+    const CODIGO_VALIDOS = ["2201", "2095", "1883" // <-- tu código
     const ENLACE_SECRETO = "https://kickoffzfla26.my.canva.site/kickoff"; // <-- tu enlace real
 
     // (Opcional) Límite de intentos
@@ -45,7 +45,7 @@
       const codigo = input.value.trim();
       intentos++;
 
-      if (codigo === CODIGO_CORRECTO) {
+      if (codigo === CODIG_VALIDOS.includes(codiggo)) {
         // Redirige al enlace secreto
         window.location.href = ENLACE_SECRETO;
         return;
@@ -71,4 +71,5 @@
 </body>
 
 </html>
+
 
